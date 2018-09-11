@@ -13,10 +13,12 @@ namespace PlanetAndSpaceships
             var addJupAndSat = new AddJupAndSat();
             var combineLists = new CombineLists();
             var completeSolarSystem = new CompleteSolarSystem();
+            var rockyPlanets = new RockyPlanets();
 
             addJupAndSat.AddPlanets(planetList);
             combineLists.CombinePlanetLists(planetList, lastTwoPlanets);
             completeSolarSystem.AddEarthVenusPluto(planetList);
+            rockyPlanets.ExtractRockyPlanets(planetList);
 
             foreach(string planet in planetList)
             {
